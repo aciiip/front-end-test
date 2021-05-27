@@ -1,0 +1,18 @@
+.box-container {
+  width: 100%;
+  justify-content: space-evenly;
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
+  gap: 10px;
+}
+.box-item {
+  background-color: #1ABC9C;
+  width: 200px;
+  height: 200px;
+}
+.box-title {
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}

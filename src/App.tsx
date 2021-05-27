@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import {AddColor} from "./components/add-color/AddColor";
+import {Search} from "./components/search/Search";
+import {Box} from "./components/box/Box";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+          <div>
+              <AddColor />
+          </div>
+          <hr/>
+          <div>
+              <Search />
+          </div>
+          <hr/>
+          <div>
+              <Box />
+          </div>
+      </div>
   );
 }
 
